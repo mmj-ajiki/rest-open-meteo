@@ -24,9 +24,19 @@ npm install
 npm audit fix
 ```
 
+### 環境変数の設定
+
+このサーバーは起動時に以下の環境変数を参照する。環境変数は **env.tpl** に定義されている。サーバーを起動する前に、プログラムが読み込めるようにこのファイル名を **.env** に変更する。
+
+|  環境変数名 |  説明  |
+| ---- | ---- |
+|  OPENMETEO_REST_URL  | Open Meteo REST APIへアクセスするルートURL |
+|  OPENMETEO_TZ  | Open Meteo REST APIへ渡すタイムゾーン（例：Asia/Tokyo） |
+|  REST_PORT | サーバーのポート番号（初期設定は、5000） |
+
 ### サーバーの起動
 
-開発モードで起動 (ログが多く表示される)
+開発モードで起動 (ソースコード編集内容が自動的に反映される)
 
 ```bash
 npm run dev
@@ -37,16 +47,6 @@ npm run dev
 ```bash
 npm start
 ```
-
-### 環境件数
-
-このサーバーは起動時にいくつかの環境変数を参照する。環境変数は .envに設定されている。
-
-|  環境変数名 |  説明  |
-| ---- | ---- |
-|  OPENMETEO_REST_URL  | Open Meteo REST APIへアクセスするルートURL |
-|  OPENMETEO_TZ  | Open Meteo REST APIへ渡すタイムゾーン（例：Asia/Tokyo） |
-|  REST_PORT | サーバーのポート番号（初期設定は、5000） |
 
 ### REST APIs
 
@@ -181,5 +181,6 @@ REST用アグリゲーションの出力構造：
 
 ### 更新履歴
 
+- 2024-10-13 - Herokuへデプロイ準備: Procfile追加、.envをenv.tplへ変更
 - 2024-10-11 - 天気を追加、ループバック有効を追記
 - 2024-09-02 - 初回リリース
