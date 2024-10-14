@@ -12,7 +12,7 @@ import app from './src/app.js';
 import http from 'http';
 import dotenv from 'dotenv';
 dotenv.config();
-const portNumber=process.env.REST_PORT;
+const portNumber=process.env.PORT || 5000;
 
 /*
  * Get port from environment and store in Express.
@@ -91,5 +91,6 @@ function onListening() {
 
 /*
  * FILE HISTORY
+ * [2] 2024-10-14 - Referred to process.env.PORT
  * [1] 2024-09-02 - Initial version
  */

@@ -32,7 +32,7 @@ npm audit fix
 | ---- | ---- |
 |  OPENMETEO_REST_URL  | Open Meteo REST APIへアクセスするルートURL |
 |  OPENMETEO_TZ  | Open Meteo REST APIへ渡すタイムゾーン（例：Asia/Tokyo） |
-|  REST_PORT | サーバーのポート番号（初期設定は、5000） |
+|  PORT | サーバーのポート番号（初期設定は、5000） |
 
 ### サーバーの起動
 

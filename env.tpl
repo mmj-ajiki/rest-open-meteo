@@ -7,4 +7,4 @@ OPENMETEO_REST_URL=https://api.open-meteo.com/v1/forecast
 # 対象となるタイムゾーン
 OPENMETEO_TZ=Asia/Tokyo
 # RESTサーバーのポート番号
-REST_PORT=5000
+# PORT=5000
