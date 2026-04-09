@@ -1,10 +1,10 @@
 {
   "name": "rest-open-meteo",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Sample REST APIs using Open-Meteo APIs",
   "type": "module",
   "engines": {
-    "node": "20.x"
+    "node": "24.x"
   },
   "scripts": {
     "dev": "cross-env NODE_ENV=development nodemon ./server.js",
@@ -18,7 +18,7 @@
   "author": "ta",
   "license": "MIT",
   "dependencies": {
-    "axios": "^1.7.7",
+    "axios": "^1.12.2",
     "dotenv": "^16.4.5",
     "express": "^4.21.1",
     "http-errors": "^2.0.0",
